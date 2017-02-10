@@ -1,12 +1,14 @@
-a, b = input(""), input("")
+a, b, c = input(""), input(""), input("")
 
 
 what_to_execute = {
         "instructions": [("LOAD_VALUE", 0),
                          ("LOAD_VALUE", 1),
                          ("ADD_TWO_VALUES", None),
+                         ("LOAD_VALUE", 2),
+                         ("ADD_TWO_VALUES", None),
                          ("PRINT_ANSWER", None)],
-        "numbers": [a, b]
+        "numbers": [a, b, c]
         }
 class Interpreter:
     def __init__(self):
